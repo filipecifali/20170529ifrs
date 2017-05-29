@@ -193,13 +193,20 @@ def exemplo_8_toolkit():
     'Tornado'
     'Web2py'
     'Pyramid'
-    >>> print('')
+    """
+
+def exemplo_9_duvidas():
+    """
+    >>> while True:
+    >>>     d = input('Dúvida:')
+    >>>     if d == '':
+    >>>         break
     """
 
 def exemplo_final():
     """
-    >>> for quote in best_quotes:
-    >>>     print(quote)
+    >>> for line in best_quote:
+    >>>     print(line)
     'King Arthur: I am your king.'
     'Woman: Well, I didn't vote for you.'
     'King Arthur: You don't vote for kings.'
