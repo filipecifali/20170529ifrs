@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
+
 """
->>> print("Bem-vindos a Introdução a Python 3 [!!]")
-"Bem-vindos a Introdução a Python 3"
+>>> print("Bem-vindos a Introducao a Python 3 [!!]")
+"Bem-vindos a Introducao a Python 3"
 """
 
 def exemplo_0_porque_usar():
@@ -9,8 +11,8 @@ def exemplo_0_porque_usar():
     'Quem sou eu?'
     >>> print('Filipe Cifali')
     'Filipe Cifali'
-    >>> print('Trabalho como sysadmin na KingHost no núcleo de Linux desde 2010')
-    'Trabalho como sysadmin na KingHost no núcleo de Linux desde 2010'
+    >>> print('Trabalho como sysadmin na KingHost no nucleo de Linux desde 2010')
+    'Trabalho como sysadmin na KingHost no nucleo de Linux desde 2010'
     >>> print('Porque usar python?')
     'Porque usar python?'
     >>> import antigravity
@@ -40,8 +42,8 @@ def exemplo_0_porque_usar():
     'Linguagem dinamica e fortemente tipada'
     >>> print('Criada para ser uma linguagem de facil uso')
     'Criada para ser uma linguagem de facil uso'
-    >>> print('Mas quem usa essa coisa? É uma cobra afinal de contas...')
-    'Mas quem usa essa coisa? É uma cobra afinal de contas...'
+    >>> print('Mas quem usa essa coisa?')
+    'Mas quem usa essa coisa?'
     >>> print(lista_empresas[:6])
     ['Globocom', 'Google', 'Magazine Luiza', 'SERPRO', 'ZNC Sistemas', 'TOTVS']
     >>> print('Uma das comunidades mais ativas do Brasil')
@@ -67,8 +69,8 @@ def exemplo_1_strings():
     >>> print(nome_completo.split(' ')[1])
     'Cifali'
 
-    >>> print('Ele também consegue fazer slicing de maneira bem prática')
-    'Ele também consegue fazer slicing de maneira bem prática'
+    >>> print('Ele tambem consegue fazer slicing de maneira bem pratica')
+    'Ele tambem consegue fazer slicing de maneira bem pratica'
     >>> print(nome[0])
     'F'
     >>> print(nome[-1])
@@ -77,15 +79,15 @@ def exemplo_1_strings():
     'ilipe'
     >>> print(nome[:1])
     'F'
-    >>> print('E consegue até mesmo inverter strings usando o slicing')
-    'E consegue até mesmo inverter strings usando o slicing'
+    >>> print('E consegue ate mesmo inverter strings usando o slicing')
+    'E consegue ate mesmo inverter strings usando o slicing'
     >>> print(nome[::-1])
     'epiliF'
     """
 
 def exemplo_2_ints():
     """
-    >>> # Basicamente Python também sabe um pouquinho de matemática
+    >>> # Basicamente Python tambem sabe um pouquinho de matematica
     >>> print(10 + 2)
     '12'
     >>> print(2 * 6)
@@ -96,7 +98,7 @@ def exemplo_2_ints():
 
 def exemplo_3_funcoes():
     """
-    >>> # Para criar funções / métodos em Python, usa-se a keyword 'def'
+    >>> # Para criar funcoes / metodos em Python, usa-se a keyword 'def'
     >>> def exemplo_de_funcao(x, y):
     >>>     return x + y
     >>> exemplo_de_funcao(1, 2)
@@ -105,8 +107,8 @@ def exemplo_3_funcoes():
 
 def exemplo_4_lacos_e_condicionais():
     """
-    >>> print('Os laços condicionais são bem simples de se usar')
-    'Os laços condicionais são bem simples de se usar'
+    >>> print('Os lacos condicionais sao bem simples de se usar')
+    'Os lacos condicionais sao bem simples de se usar'
     >>> from random import randint
     >>> num_sorteado = randint(0, 9)
     >>> print(num_sorteado)
@@ -135,24 +137,25 @@ def exemplo_4_lacos_e_condicionais():
 
 def exemplo_5_pegue_me_se_puder():
     """
-    >>> print('E chegamos a tópicos mais sérios... ')
+    >>> print('E chegamos a topicos mais serios... ')
     >>> def divisao_que_nao_criaram_teste(x, y):
     >>>     try:
     >>>         x/y
     >>>     except:
-    >>>         print('Você não vai mesmo testar o y?')
+    >>>         print('Voce nao vai mesmo testar o y?')
     >>>     finally:
     >>>         return 42
-    'Você não vai mesmo testar o y?'
+    >>> divisao_que_nao_criaram_teste(1, 0)
+    'Voce nao vai mesmo testar o y?'
     42
-    >>> print('Existem diversos tipos de exceção e você pode criar as suas')
-    'Existem diversos tipos de exceção e você pode criar as suas'
+    >>> print('Existem diversos tipos de exception e voce pode criar as suas')
+    'Existem diversos tipos de exception e voce pode criar as suas'
     """
 
 def exemplo_6_classes():
     """
-    >>> print('Tá mas... cadê a orientação a blobjetos?')
-    'Tá mas... cadê a orientação a blobjetos?'
+    >>> print('Ta mas... cade a orientacaoo a blobjetos?')
+    'Ta mas... cade a orientacao a blobjetos?'
     >>> class Doto:
     >>>     atrib = 'Truth compels me.'
     >>>
@@ -166,26 +169,26 @@ def exemplo_6_classes():
     >>> b = Doto
     'Magic is an abomination. Magic thyself out of that.'
     'Truth compels me.'
-    >>> print('A palavra "self" é usada para mapear a instancia do objeto')
-    'A palavra "self" é usada para mapear a instancia do objeto'
+    >>> print('A palavra "self" e usada para mapear a instancia do objeto')
+    'A palavra "self" e usada para mapear a instancia do objeto'
     """
 
 def exemplo_7_imports():
     """
-    >>> print('E falando de classes, você pode transformar elas em módulos')
-    'E falando de classes, você pode transformar elas em módulos'
+    >>> print('E falando de classes, voce pode transformar elas em modulos')
+    'E falando de classes, voce pode transformar elas em modulos'
     >>> from doto import Doto # arquivo da classe doto.py
-    >>> from random import choice # adiciona ao namespace atual somente a função choice
-    >>> from random import * # adiciona todas as funções e são chamadas pelos nomes
+    >>> from random import choice # adiciona ao namespace atual somente a funcao choice
+    >>> from random import * # adiciona todas as funções e sao chamadas pelos nomes
     >>> import random # adiciona tudo mas precisa chamar por random.choice (i.e)
     """
 
 def exemplo_8_toolkit():
     """
-    >>> print('O pip é o instalador de pacotes mais recomendado atualmente')
-    'O pip é o instalador de pacotes mais recomendado atualmente'
-    >>> print('Para desenvolvimento web os frameworks mais populares são:')
-    'Para desenvolvimento web os frameworks mais populares são:'
+    >>> print('O pip e o instalador de pacotes mais recomendado atualmente')
+    'O pip e o instalador de pacotes mais recomendado atualmente'
+    >>> print('Para desenvolvimento web os frameworks mais populares sao:')
+    'Para desenvolvimento web os frameworks mais populares sao:'
     >>> for top in top_web_frameworks:
     >>>     print(top)
     'Django'
@@ -198,7 +201,7 @@ def exemplo_8_toolkit():
 def exemplo_9_duvidas():
     """
     >>> while True:
-    >>>     d = input('Dúvida:')
+    >>>     d = input('Duvida:')
     >>>     if d == '':
     >>>         break
     """
