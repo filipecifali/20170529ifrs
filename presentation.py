@@ -11,6 +11,9 @@ def exemplo_0_porque_usar():
     'Quem sou eu?'
     >>> print('Filipe Cifali')
     'Filipe Cifali'
+    >>> print(contact_card)
+    {'email': 'cifali@kinghost.com.br', 'facebook': '404 Not found', 'twitter': 'FilipeCifali'\
+            'github': 'filipecifali', 'APyB': 'membro voluntario'}
     >>> print('Trabalho como sysadmin na KingHost no nucleo de Linux desde 2010')
     'Trabalho como sysadmin na KingHost no nucleo de Linux desde 2010'
     >>> print('Porque usar python?')
@@ -50,6 +53,8 @@ def exemplo_0_porque_usar():
     'Uma das comunidades mais ativas do Brasil'
     >>> print('Acesse http://python.org.br/ e descubra mais :)')
     'Acesse http://python.org.br/ e descubra mais :)'
+    >>> print('Se gostou, faca parte da associacao: http://associados.python.org.br/')
+    'Se gostou, faca parte da associacao: http://associados.python.org.br/'
     """
 
 def exemplo_1_strings():
@@ -179,7 +184,7 @@ def exemplo_7_imports():
     'E falando de classes, voce pode transformar elas em modulos'
     >>> from doto import Doto # arquivo da classe doto.py
     >>> from random import choice # adiciona ao namespace atual somente a funcao choice
-    >>> from random import * # adiciona todas as funções e sao chamadas pelos nomes
+    >>> from random import * # adiciona todas as funcoes e sao chamadas pelos nomes
     >>> import random # adiciona tudo mas precisa chamar por random.choice (i.e)
     """
 
