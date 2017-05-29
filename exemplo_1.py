@@ -1,4 +1,4 @@
-def tipos_de_dados:
+def tipos_de_dados():
     """
     >>> lista = [1, 2, 3] # Mutantes, mutaveis e flexiveis, nao muito rapidas
     >>> print(lista[1])
