@@ -1,31 +1,31 @@
-def lacos_e_condicionais():
+def funcoes():
     """
-    >>> print('Os lacos condicionais sao bem simples de se usar')
-    'Os lacos condicionais sao bem simples de se usar'
-    >>> from random import randint
-    >>> num_sorteado = randint(0, 9)
-    >>> print(num_sorteado)
-    5
-    >>> if num_sorteado > 5:
-    >>>     print('>')
-    >>> elif num_sorteado < 5:
-    >>>     print('<')
-    >>> elif num_sorteado == 5:
-    >>>     print('==')
-    >>> else:
-    >>>     print('>=<')
-    '=='
-    >>> exemplos_usados = ['letras', 'numeros', 'funcoes', 'loops']
-    >>> for e in exemplos_usados:
-    >>>     print(e)
-    'letras'
-    'numeros'
-    'funcoes'
-    'loops'
-    >>> while True:
-    >>>     print('Do you want ants? That\'s how you get ants!!')
-    >>>     break
-    'Do you want ants? That's how you get ants!!'
+    >>> # Para criar funcoes / metodos em Python, usa-se a keyword 'def'
+    >>> def exemplo_de_funcao(x, y):
+    >>>     return x + y
+    >>>
+    >>> exemplo_de_funcao(1, 2)
+    3
+    >>> def argumentos_dinamicos(*args):
+    >>>     print('args')
+    >>>     for arg in args:
+    >>>         print(arg)
+    >>>
+    >>> def argumentos_dinamicos_kv(**kwargs):
+    >>>     print('kwargs')
+    >>>     for key, value in kwargs.items():
+    >>>         print(key, value)
+    >>>
+    >>> argumentos_dinamicos('a', 'b', 'c')
+    'args'
+    'a'
+    'b'
+    'c'
+    >>> argumentos_dinamicos_kv(nome='Filipe', sobrenome='Cifali', hobby='NYXNYXNYX')
+    'kwargs'
+    'nome Filipe'
+    'sobrenome Cifali'
+    'hobby NYXNYXNYX'
     """
 
 if __name__ == "__main__":

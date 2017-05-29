@@ -1,22 +1,18 @@
-def classes():
+def pegue_me_se_puder():
     """
-    >>> print('Ta mas... cade a orientacaoo a blobjetos?')
-    'Ta mas... cade a orientacao a blobjetos?'
-    >>> class Doto:
-    >>>     atrib = 'Truth compels me.'
-    >>>
-    >>>     def __init__(self):
-    >>>         self.do_some_black_majecs()
-    >>>
-    >>>     def do_some_bkack_majecs(self):
-    >>>         print('Magic is an abomination. Magic thyself out of that.')
-    >>>         print(atrib)
-    >>>
-    >>> b = Doto
-    'Magic is an abomination. Magic thyself out of that.'
-    'Truth compels me.'
-    >>> print('A palavra "self" e usada para mapear a instancia do objeto')
-    'A palavra "self" e usada para mapear a instancia do objeto'
+    >>> print('E chegamos a topicos mais serios... ')
+    >>> def divisao_que_nao_criaram_teste(x, y):
+    >>>     try:
+    >>>         x/y
+    >>>     except:
+    >>>         print('Voce nao vai mesmo testar o y?')
+    >>>     finally:
+    >>>         return 42
+    >>> divisao_que_nao_criaram_teste(1, 0)
+    'Voce nao vai mesmo testar o y?'
+    42
+    >>> print('Existem diversos tipos de exception e voce pode criar as suas')
+    'Existem diversos tipos de exception e voce pode criar as suas'
     """
 
 if __name__ == "__main__":
