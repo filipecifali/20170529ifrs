@@ -3,4 +3,4 @@
 
 * clone this repo under site-packages or anywhere your PYTHONPATH can see
 
-* run as `playerpiano --color presentation`
+* run as `./p.sh` or `./p.sh <slide>`
